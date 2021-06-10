@@ -1,0 +1,7 @@
+public class Article {
+private String id;
+private String name;
+private double price;
+// constructor
+// getter/setter
+}
