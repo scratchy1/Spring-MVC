@@ -1,0 +1,11 @@
+@RequestMapping("/rdv")
+@Controller
+public class RdvController {
+@RequestMapping("/details/{name}")
+public String findByName(
+@PathVariable String name ) { ... }
+@RequestMapping("/details/{name}/{date}")
+public String findByNameAndDate(
+@PathVariable String name,
+@PathVariable String date ) { ... }
+}
