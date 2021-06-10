@@ -1,0 +1,8 @@
+@Controller @RequestMapping("/ecommerce")
+public class ShopController {
+@GetMapping( path = "/details/{id}",
+produces = MediaType.APPLICATION_JSON_UTF8_VALUE )
+public Article details( @PathVariable String id ) {
+Article article = findById(id);
+return article;
+} }
