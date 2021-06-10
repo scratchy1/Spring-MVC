@@ -1,0 +1,8 @@
+@Controller
+public class SimpleController {
+@RequestMapping("/simple")
+@ResponseBody
+public String simple() {
+return "Hello world!";
+}
+}
