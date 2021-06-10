@@ -9,3 +9,6 @@ public String findByNameAndDate(
 @PathVariable String name,
 @PathVariable String date ) { ... }
 }
+// Example
+@RequestMapping("/hotels/{hotel}/*")
+@RequestMapping("/fichier/{symbolicName:[a-z]+}{extension:\\.[a-z]+}") //as regular expressions
