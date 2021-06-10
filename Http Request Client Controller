@@ -1,0 +1,8 @@
+@RequestMapping("/clients")
+@Controller
+public class ClientController {
+@RequestMapping("/{name}", method = RequestMethod.GET)
+public String read(...) { ... }
+@RequestMapping("/{name}", method = RequestMethod.POST)
+public String add(...) { ... }
+}
