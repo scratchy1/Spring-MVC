@@ -1,0 +1,11 @@
+@Controller @RequestMapping("/ecommerce")
+public class ShopController {
+@GetMapping("/add/{id}")
+public String add( HttpSession session, @PathVariable String id ) {
+Basket myBasket = session.getAttribute("basket");
+if( myBasket == null ) {
+myBasket = new Basket();
+session.setAttribute("basket", myBasket);
+}
+myBasket.add(id);
+} }
