@@ -1,0 +1,7 @@
+@Controller @RequestMapping("/ecommerce")
+public class ShopController {
+@GetMapping( path = "/command" )
+public String command() {
+magasin.registerCommand();
+return "redirect:/ecommerce/index.html";
+} }
