@@ -6,3 +6,14 @@ public String read(...) { ... }
 @RequestMapping("/{name}", method = RequestMethod.POST)
 public String add(...) { ... }
 }
+
+//Since Spring 4.3
+
+@RequestMapping("/clients")
+@Controller
+public class ClientController {
+@GetMapping("/{name}")
+public String read(...) { ... }
+@PostMapping("/{name}")
+public String add(...) { ... }
+}
